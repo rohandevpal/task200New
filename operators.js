@@ -18,26 +18,39 @@ oddEven(97);
 
 //• >, <, ==, === comparison test karo.
 
-if(a > b){
-    console.log('a is bigger than b');
+function compareValues(a, b) {
 
-}else{
-    console.log('b is bigger than a');
-    
-}
+    if (a > b) {
+      console.log('a is bigger than b');
+    } else {
+      console.log('b is bigger than a');
+    }
+  
+    if (a == b) {
+      console.log('both have same value');
+    } else {
+      console.log('both does not have same value');
+    }
+  
+    if (a === b) {
+      console.log('both have same value and same data type');
+    } else {
+      console.log('both does not have same value and not even same data type');
+    }
+  
+  }
+  
+  // Function call
+  compareValues(10, 5);
 
-if(a == b){
-    console.log('both have same value');
-    
-}else{
-    console.log('both does not have same value');
-    
-}
 
-if(a === b){
-    console.log('both have same value and same data type');
+  //• Simple calculator logic likho (add, subtract, multiply).
+
+  function calc(a,b){
+    console.log('Addition', a + b);
+    console.log('Subtraction', a - b);
+    console.log('multiply', a * b);
     
-}else{
-    console.log('both does not have same value and not even same data type');
-    
-}
+  }
+
+  calc(6,9)
