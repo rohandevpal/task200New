@@ -55,7 +55,7 @@ for(i=0; i<= arr.length; i++){
 //Block scope test karo using let aur var.
 {
     let o = "option";
-    console.log(o);
+    // console.log(o);
     
 }
 
@@ -68,4 +68,97 @@ function myFun(){
     // console.log(data);   
     
 }
-console.log(myFun());
+// console.log(myFun());
+
+
+//Function ke andar variable declare karke bahar access test karo.
+function testVar(){
+    let testVar = "rohan";
+    // console.log(testVar);
+    
+}
+testVar();
+// console.log(testVar);
+
+
+//Destructuring use karke variables extract karo.
+let array = ['rohan', 'barkha', 'karan', 'tarun','yuvi', 'naman', 'Yash'];
+
+let [a,b,c,d] = array;
+
+//loop use krke 
+array.forEach(el => {
+    // console.log(el);
+});
+
+//Task 11: Spread operator use karke array copy karo.
+// Hint: modern JavaScript features jaise destructuring, spread, async concepts try karo.
+
+let originalArray = [1,2,3,4,5,6,7];
+
+let copiedArray = [...originalArray];
+
+// console.log('copied array:', copiedArray);
+
+
+
+//Object ko merge karne ka logic likho.
+let obj1 ={
+    name:"Rohan",
+    course:"BCA",
+    RollNumber:"25",
+    Interst:"Singing"
+}
+
+let obj2 = {
+    wifeName:"Barkha",
+    wifecourse:"BA Programme",
+    wifeRollNumber:"21",
+    wifeInterst:"Scrolling"
+}
+
+let mergedObject = {...obj1, ...obj2}
+// console.log(mergedObject);
+
+
+//Optional chaining ka example banao.
+let newobj ={
+    name:"Rohan",
+    address:{
+        city:"Delhi",
+    }
+}
+let newobj2 ={
+    name:"Rohan",
+    
+}
+
+// console.log(newobj.address?.city);
+//if i remove ? so it will print "error"
+// console.log(newobj2.address.city);
+
+//Default values ke saath destructuring use karo
+
+let user = {
+    value:"barkha"
+};
+
+// destructuring with default value
+const { value, username = 20 } = user;
+// console.log(value);
+// console.log(username);
+
+
+//Dynamic variables / properties create karo.
+let key = "age";
+
+const newUser  = {
+    username: "Rohan",
+    [key] : 27,
+}
+
+console.log(newUser);
+
+
+
+
