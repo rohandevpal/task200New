@@ -208,3 +208,95 @@ function getWeekDay(dayNumber) {
   }
   
   getWeekDay(1);
+
+// Multiple Conditions – If age is 18+ and user has license then driving allowed. Expected Output: Driving allowed
+function drivingAllowed(age, haslicance){
+
+    if(age >= 18 && haslicance == true){
+        console.log('Driving Allowed');   
+    }else{
+        console.log('Driving not allowed');
+        
+    }
+}
+
+drivingAllowed(15, false);
+
+//Discount System – Based on purchase amount show discount (5000+ 20%, 2000+ 10%, else none). Expected Output: Discount: 10%
+
+function showDiscount(purchaseAmount){
+    if(purchaseAmount > 5000){
+        console.log('Discount: 20%');
+        
+    }else if(purchaseAmount > 2000){
+        console.log('Discount: 10%');
+        
+    }else{
+        console.log('You are not eligible for the discount');
+        
+    }
+}
+
+showDiscount(500);
+
+//switch Calculator – Take two numbers and an operator (+ - * /) and calculate result using switch. Expected Output: Result: 15
+function calculator(num1, num2, operator) {
+    let result;
+
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+
+        case '-':
+            result = num1 - num2;
+            break;
+
+        case '*':
+            result = num1 * num2;
+            break;
+
+        case '/':
+            result = num1 / num2;
+            break;
+
+        default:
+            return "Invalid operator";
+    }
+
+    return result;
+}
+
+let answer = calculator(10, 5, '+');
+console.log("Result:", answer);
+
+
+
+//Number Range Check – Check if number is between 10 and 50. Expected Output: Number is in range
+
+function checkNumberbetween(number){
+    if(number >=10 && number <=50){
+        console.log('Number is in range');
+        
+    }else{
+        console.log('Number is not range ');
+        
+    }
+}
+
+checkNumberbetween(22);
+
+//Username & Password Check – If username and password are correct print login successful. Expected Output: Login successful
+
+function login(username, password) {
+    let correctUsername = "admin";
+    let correctPassword = "1234";
+
+    if (username === correctUsername && password === correctPassword) {
+        console.log("Login successful");
+    } else {
+        console.log("Invalid username or password");
+    }
+}
+
+login("admin", "1234");
