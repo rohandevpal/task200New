@@ -35,6 +35,41 @@ let number = 12;
 let x = 1;
 
 while (x<=10) {
-    console.log(`${number} * ${x} = ${number *x}`);
+    // console.log(`${number} * ${x} = ${number *x}`);
     x++ 
+}
+
+//• 2. while Loop – Use a while loop to print numbers from 1 to 5.
+let a = 0;
+while (a <6) {
+    // console.log(a);
+    a++
+    
+}
+
+
+//• 3. do while Loop – Use a do while loop to print numbers from 1 to 3.
+let c = 1;
+
+do {
+    // console.log(c);
+    c++
+    
+} while (c<=3);
+
+//• 4. Even Numbers – Use a for loop to print even numbers from 1 to 10.
+
+
+for (let e = 1; e <= 10; e++) {
+    if (e % 2 === 0) {
+        // console.log(e);
+    }
+}
+
+//• 5. Array Print (for...of) – Store 3 fruits in an array and print them using for...of loop.
+let fruits = ['apple', 'mango', 'banana'];
+
+for (const el of fruits) {
+    console.log(el);
+    
 }
