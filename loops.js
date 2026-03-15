@@ -35,7 +35,7 @@ let number = 12;
 let x = 1;
 
 while (x<=10) {
-    // console.log(`${number} * ${x} = ${number *x}`);
+    console.log(`${number} * ${x} = ${number *x}`);
     x++ 
 }
 
@@ -70,6 +70,50 @@ for (let e = 1; e <= 10; e++) {
 let fruits = ['apple', 'mango', 'banana'];
 
 for (const el of fruits) {
-    console.log(el);
+    // console.log(el);
     
 }
+
+//6. Sum of Numbers – Use a for loop to calculate the sum of numbers from 1 to 10. Expected Output: Sum: 55
+
+let sum = 0;
+for (let i = 0; i <= 10; i++) {
+    sum = sum+i;
+    
+}
+// console.log('sum:', sum);
+
+
+//Countdown – Use a while loop to print numbers from 10 down to 1.
+let n = 10;
+
+while (n >= 1) {
+    // console.log(n);
+    n--;
+    
+}
+
+//. Array Elements – Store 5 numbers in an array and print them using for...of loop.
+let numbers = [1,2,3,4,5,];
+
+for (const el of numbers) {
+    // console.log(el);
+    
+}
+
+//• 9. Object Keys – Create an object with name, age, city and print the keys using for...in loop.
+let obj ={
+    name:"Yash",
+    age:17,
+    city:"Delhi"
+}
+
+for (const key in obj) {
+    
+    const el = obj[key];
+        
+    console.log(el);
+    
+   
+}
+
